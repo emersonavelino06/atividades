@@ -18,4 +18,5 @@ public class Descanso {  // criaçao da classe descanso
     public String getStatusGeral() {
         return "";
     }
+
 }

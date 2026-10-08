@@ -17,5 +17,6 @@ public class RegistroTempoOnline {
 
     public String toString() {
     }
+
     // ainda preciso adicionar o resto das informaçoes e o to string
 }
