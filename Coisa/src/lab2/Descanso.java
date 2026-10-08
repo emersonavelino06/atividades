@@ -14,6 +14,7 @@ public class Descanso {  // criaçao da classe descanso
     public void defineNumeroSemanas(int valor) {
         numeroSemanas = valor;
     }
+
     public String getStatusGeral() {
         return "";
     }

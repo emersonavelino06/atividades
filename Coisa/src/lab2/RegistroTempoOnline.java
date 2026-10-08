@@ -14,5 +14,8 @@ public class RegistroTempoOnline {
     }
     public boolean atingiuMetaTempoOnline() {
     }
+
+    public String toString() {
+    }
     // ainda preciso adicionar o resto das informaçoes e o to string
 }
