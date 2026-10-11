@@ -5,18 +5,35 @@ public class Descanso {  // criaçao da classe descanso
     private int numeroSemanas;
     private boolean descansado;
 
-    public Descanso() { // o construtor, tem o mesmo nome da classe
+    public Descanso() {
+        this.horasDescanso = 0;
+        this.numeroSemanas = 0;
+        this.descansado = false;
     }
-    public void DefineHorasDescanso(int valor) { // metodos presentes no codigo
-        horasDescanso = valor;
+
+
+    public void defineHorasDescanso(int valor)  {
+        this.horasDescanso = valor;
     }
 
     public void defineNumeroSemanas(int valor) {
-        numeroSemanas = valor;
+        this.numeroSemanas = valor;
     }
 
     public String getStatusGeral() {
-        return "";
+        if (this.numeroSemanas == 0) {
+            return "nao descansado";
+        }
+
+        int media = this.horasDescanso / this.numeroSemanas;
+
+        if (media >= 26) {
+            return "descansado";
+        } else {
+            return "nao descansado";
+        }
+
+        }
     }
 
-}
+

@@ -5,21 +5,20 @@ public class Resumo {
     private String conteudo;
 
     public Resumo(String tema, String conteudo) {
+        this.tema = tema;
+        this.conteudo = conteudo;
     }
 
-    public String getTema(){
-        return tema;
+    public String getTema() {
+        return this.tema;
     }
 
     public String getConteudo() {
-        return conteudo;
+        return this.conteudo;
     }
 
-    @Override
+
     public String toString() {
-        return super.toString();
+        return "- " + this.tema + ": " + this.conteudo;
     }
-    // adicionar os metodos e o contrutor
-
-
 }
